@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.nmq687.basicwidgets.MainActivity">
+
+    <TextView
+        android:id="@+id/course_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/course_name"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/project_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/project_name"
+        android:layout_below="@+id/course_name"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/my_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/my_name"
+        android:layout_below="@+id/project_name"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:id="@+id/button1"
+        android:layout_below="@+id/my_name"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:onClick="button1Pressed" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/checkBox1"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/button1"
+        android:layout_alignParentStart="true" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/switch1"
+        android:layout_below="@+id/checkBox1"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/switch1"
+        android:layout_alignParentStart="true"
+        android:id="@+id/radioGroup"
+        android:layout_marginTop="20dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RadioButton 1"
+            android:id="@+id/radioButton1" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RadioButton 2"
+            android:id="@+id/radioButton2" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RadioButton 3"
+            android:id="@+id/radioButton3" />
+    </RadioGroup>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar1"
+        android:layout_below="@+id/sliderStaticLabel"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textBox1"
+        android:layout_below="@+id/seekBar1"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentEnd="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Button Label"
+        android:id="@+id/buttonLabel"
+        android:layout_alignTop="@+id/button1"
+        android:layout_toEndOf="@+id/button1"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="CheckBox Label"
+        android:id="@+id/checkBoxLabel"
+        android:layout_alignTop="@+id/checkBox1"
+        android:layout_toEndOf="@+id/checkBox1"
+        android:layout_alignBottom="@+id/checkBox1"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Switch Label"
+        android:id="@+id/switchLabel"
+        android:layout_alignTop="@+id/switch1"
+        android:layout_toEndOf="@+id/switch1"
+        android:layout_alignBottom="@+id/switch1"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="RadioButton Label"
+        android:id="@+id/radioButtonLabel"
+        android:layout_alignTop="@+id/radioGroup"
+        android:layout_toEndOf="@+id/radioGroup"
+        android:layout_alignBottom="@+id/radioGroup"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Slider is at: "
+        android:id="@+id/sliderStaticLabel"
+        android:layout_below="@+id/radioGroup"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0%"
+        android:id="@+id/sliderDynamicLabel"
+        android:layout_alignTop="@+id/sliderStaticLabel"
+        android:layout_toEndOf="@+id/sliderStaticLabel"
+        android:layout_marginLeft="5dp"
+        android:layout_alignBottom="@+id/sliderStaticLabel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="TextBox Label"
+        android:id="@+id/textBoxLabel"
+        android:layout_alignTop="@+id/textBox1"
+        android:layout_toEndOf="@+id/textBox1"
+        android:layout_alignBottom="@+id/textBox1"
+        android:layout_marginLeft="10dp" />
+
+</RelativeLayout>

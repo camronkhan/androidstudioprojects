@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SSC Product Support</string>
+    <string name="label_product_name">Product</string>
+    <string name="label_product_description">Description</string>
+    <string name="label_product_company">Company</string>
+    <string name="label_product_source">Source</string>
+</resources>

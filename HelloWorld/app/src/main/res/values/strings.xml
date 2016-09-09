@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HelloWorld</string>
+    <string name="course_name">CSC 470 Android App Development</string>
+    <string name="project_name">Project 1</string>
+    <string name="my_name">Camron Khan</string>
+    <string name="label">I\'m a Label</string>
+    <string name="button">Click Me</string>
+</resources>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SSC Product Support</string>
+    <string name="action_settings">Settings</string>
+    <string name="search_label">Search products</string>
+    <string name="search_hint">Search products</string>
+    <string name="productDetailLabel">Product Details</string>
+    <string name="productDetailNameLabel">Name</string>
+    <string name="productDetailDescriptionLabel">Description</string>
+    <string name="productDetailSourceLabel">Source</string>
+    <string name="productDetailCompanyLabel">Company</string>
+</resources>

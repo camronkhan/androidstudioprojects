@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:id="@+id/label_product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_product_name" />
+
+    <TextView
+        android:id="@+id/value_product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/value_product_description"
+        android:layout_alignTop="@+id/label_product_name" />
+
+    <TextView
+        android:id="@+id/label_product_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_product_name"
+        android:layout_marginTop="12dp"
+        android:text="@string/label_product_description" />
+
+    <TextView
+        android:id="@+id/value_product_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/label_product_description"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@+id/label_product_description" />
+
+    <TextView
+        android:id="@+id/label_product_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_product_description"
+        android:layout_marginTop="12dp"
+        android:text="@string/label_product_company" />
+
+    <TextView
+        android:id="@+id/value_product_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/label_product_company"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@+id/label_product_description" />
+
+    <TextView
+        android:id="@+id/label_product_source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_product_company"
+        android:layout_marginTop="12dp"
+        android:text="@string/label_product_source" />
+
+    <TextView
+        android:id="@+id/value_product_source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/label_product_source"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@+id/label_product_description" />
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/hoop"
+    tools:context="com.example.nmq687.imagetest.MainActivity">
+
+    <ImageView
+        android:id="@+id/ball"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:src="@drawable/ball"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:id="@+id/downBtn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        android:src="@drawable/arrow_down"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="downButtonPressed"
+        android:adjustViewBounds="false" />
+
+    <ImageButton
+        android:id="@+id/rightButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        android:src="@drawable/arrow_right"
+        android:onClick="rightButtonPressed"
+        android:layout_above="@+id/downBtn"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:id="@+id/leftButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        android:src="@drawable/arrow_left"
+        android:onClick="leftButtonPressed"
+        android:layout_above="@+id/downBtn"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:id="@+id/upButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        android:src="@drawable/arrow_up"
+        android:onClick="upButtonPressed"
+        android:layout_above="@+id/rightButton"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
